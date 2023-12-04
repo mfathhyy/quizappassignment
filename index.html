@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+
+
+<body>
+
+<div class="container py-5" id="screen-one" >
+  <h2>Welcome to the Quiz App</h2>
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name" class="form-control mb-3">
+  <button onclick="startQuiz()" class="btn btn-danger mb-3">Start Playing</button>
+
+  <div id="progress-bar">
+    <div></div>
+  </div>
+</div>
+
+<div class="container py-5" id="question-container">
+  <div id="question" class="mb-4"></div>
+  <button class="answer-btn btn btn-outline-success" onclick="checkAnswer(0)"></button>
+  <button class="answer-btn btn btn-outline-success" onclick="checkAnswer(1)"></button>
+  <button class="answer-btn btn btn-outline-success" onclick="checkAnswer(2)"></button>
+  <button class="answer-btn btn btn-outline-success" onclick="checkAnswer(3)"></button>
+</div>
+
+
+<div class="container" id="result-container">
+  <div id="result"></div>
+  <button id="dashboard-btn" onclick="showDashboard()">Dashboard</button>
+</div>
+
+<div class="container" id="history-container">
+  <h2>Player History</h2>
+  <div id="user-scores"></div>
+</div>
+
+
+
+
+
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
